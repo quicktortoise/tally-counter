@@ -1,0 +1,45 @@
+:root {
+	--primary-color: #29a395;
+	--shadow-color: #29a3a3;
+	--text-color: #262626;
+	--text-color-contrast: #fdfdfd;
+	--background-color: #f2f2f2;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	text-align: center;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.instrucciones {
+	font-size: 2em;
+}
+
+.contador {
+	font-family: "Nanum Gothic Coding", monospace;
+	font-size: 6em;
+	line-height: 0;
+}
+
+.boton-restablecer {
+	font-size: 2em;
+	padding: 10px;
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
+	color: var(--text-color-contrast);
+	line-height: 1;
+	border-radius: 5px;
+	box-shadow: 0 0 5px var(--shadow-color);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #23907e;
+		--shadow-color: #239070;
+		--text-color: #28a48f;
+		--text-color-contrast: #0f3e36;
+		--background-color: #0a2924;
+	}
+}
