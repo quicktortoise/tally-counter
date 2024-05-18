@@ -2,17 +2,30 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Contador</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Source+Sans+Pro&display=swap">
 </head>
 <body>
-	<h1 style="display: none">Contador</h1>
-	<p class="instrucciones">Haga clic o toque la pantalla para aumentar la cuenta en 1</p>
-	<p class="contador"></p>
-	<button class="boton-restablecer">Restablecer</button>
+	<main class="container">
+		<h1 style="display: none">Contador</h1>
+		<p class="instructions">Haga clic o toque la pantalla para aumentar la cuenta en 1</p>
+		<p class="counter">0</p>
+
+		<div class="buttons">
+			<button class="btn" id="btn-copy">Copiar</button>
+			<button class="btn" id="btn-reset">Restablecer</button>
+		</div>
+	</main>
+
+	<footer>
+		<a href="https://github.com/quicktortoise/tally-counter" title="Github repository" target="_blank">
+			<img src="img/github-mark.svg" alt="Github logo for light background" class="lighting-light">
+			<img src="img/github-mark-white.svg" alt="Github logo for dark background" class="lighting-dark">
+		</a>
+	</footer>
 
 	<script src="script.js"></script>
 </body>

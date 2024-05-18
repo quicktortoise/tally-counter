@@ -1,45 +1,90 @@
 :root {
-	--primary-color: #29a395;
-	--shadow-color: #29a3a3;
-	--text-color: #262626;
-	--text-color-contrast: #fdfdfd;
-	--background-color: #f2f2f2;
+  --primary-color: #29a395;
+  --shadow-color: #29a3a3;
+  --text-color: #262626;
+  --text-color-contrast: #fdfdfd;
+  --background-color: #f2f2f2;
 }
 
 body {
-	font-family: "Source Sans Pro", sans-serif;
-	text-align: center;
-	background-color: var(--background-color);
-	color: var(--text-color);
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.instrucciones {
-	font-size: 2em;
+p {
+  margin: 0;
 }
 
-.contador {
-	font-family: "Nanum Gothic Coding", monospace;
-	font-size: 6em;
-	line-height: 0;
+footer {
+  padding: 1em;
+  margin-top: 2em;
+  text-align: center;
 }
 
-.boton-restablecer {
-	font-size: 2em;
-	padding: 10px;
-	border: 1px solid var(--primary-color);
-	background-color: var(--primary-color);
-	color: var(--text-color-contrast);
-	line-height: 1;
-	border-radius: 5px;
-	box-shadow: 0 0 5px var(--shadow-color);
+footer img {
+  width: 2rem;
+}
+
+.container {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.instructions {
+  font-size: 2em;
+  user-select: none;
+  text-align: center;
+}
+
+.counter {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 6em;
+  line-height: 1;
+  user-select: none;
+}
+
+.btn {
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  margin: 0 0.25em;
+  background-color: var(--primary-color);
+  color: var(--text-color-contrast);
+  line-height: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.lighting-light {
+  display: inline;
+}
+
+.lighting-dark {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--primary-color: #23907e;
-		--shadow-color: #239070;
-		--text-color: #28a48f;
-		--text-color-contrast: #0f3e36;
-		--background-color: #0a2924;
-	}
+  :root {
+    --primary-color: #23907e;
+    --shadow-color: #239070;
+    --text-color: #28a48f;
+    --text-color-contrast: #0f3e36;
+    --background-color: #0a2924;
+  }
+
+  .lighting-light {
+    display: none;
+  }
+
+  .lighting-dark {
+    display: inline;
+  }
 }
